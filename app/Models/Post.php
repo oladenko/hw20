@@ -8,6 +8,14 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Post extends Model
 {
+    protected $fillable = [
+        'title',
+        'body',
+        'user_id',
+        'category_id',
+
+
+        ];
     use HasFactory, SoftDeletes;
 
     public function category()

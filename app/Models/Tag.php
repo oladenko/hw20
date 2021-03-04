@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Tag extends Model
 {
+    protected  $fillable = [
+        'title',
+        'slug',
+        ];
     use HasFactory, SoftDeletes;
 
     public function posts()
