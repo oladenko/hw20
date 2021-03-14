@@ -46,6 +46,7 @@ Route::get('/',\App\Http\Controllers\HomeController::class)->name('home');
 //Route::get('/management/tags/{tag}/delete',[\App\Http\Controllers\tag\TagController::class,'delete'])->name('tag-management.delete');
 
 //Authorize
+Route::get('/github/callback',\App\Http\Controllers\Oauth\GitHubController::class);
 Route::middleware('guest')->group(function (){
     Route::get('/auth/login',[\App\Http\Controllers\AuthController::class,'login'])->name('login');
     Route::post('/auth/login',[\App\Http\Controllers\AuthController::class,'handleLogin'])->name('auth.handle-login');
