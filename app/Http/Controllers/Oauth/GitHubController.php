@@ -22,21 +22,23 @@ class GitHubController
             'code'          => request()->get('code'),
         ];
         $link .= '?' . http_build_query($parameters);
+//        dd($link);
         $response = Http::post($link);
-
         $data = [];
         parse_str($response->body(), $data);
         $response = Http::withHeaders(['Authorization' => 'token ' . $data['access_token']])->get('https://api.github.com/user');
+//dd($response);
 $userInfo = $response->json();
 //dd($userInfo);
         $response = Http::withHeaders(['Authorization' => 'token ' . $data['access_token']])->get('https://api.github.com/user/emails');
         $userEmails = $response->json();
+//        dd($userEmails);
         $email = $userEmails[0]['email'];
         if (null === ($user = User::where('email', $email)->first())){
             $data = [
                 'name' => $userInfo['name'],
                 'email' => $email,
-                'password' => Hash::make($userInfo['node_id'])
+//                'password' => Hash::make($userInfo['node_id'])
             ];
                 $user= User::create($data);
         }
