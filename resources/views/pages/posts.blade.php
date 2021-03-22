@@ -2,6 +2,9 @@
 
 @section('content')
     @guest
+        <p>
+            <a href="{{$instaLink}}">Instagram Auth</a>
+        </p>
     <p>
         <a href="{{$gitHubLink}}">Github Auth</a>
     </p>

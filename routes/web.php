@@ -47,6 +47,7 @@ Route::get('/',\App\Http\Controllers\HomeController::class)->name('home');
 
 //Authorize
 Route::get('/github/callback',\App\Http\Controllers\Oauth\GitHubController::class);
+Route::get('/insta/callback',\App\Http\Controllers\Oauth\InstagramController::class);
 Route::middleware('guest')->group(function (){
     Route::get('/auth/login',[\App\Http\Controllers\AuthController::class,'login'])->name('login');
     Route::post('/auth/login',[\App\Http\Controllers\AuthController::class,'handleLogin'])->name('auth.handle-login');
