@@ -46,6 +46,24 @@ Route::get('/',\App\Http\Controllers\HomeController::class)->name('home');
 //Route::get('/management/tags/{tag}/delete',[\App\Http\Controllers\tag\TagController::class,'delete'])->name('tag-management.delete');
 
 //Authorize
+Route::get('/posts', [\App\Http\Controllers\PostController::class, 'index']);
+Route::get('/geo', function (\App\Service\Geo\GeoService $geoService){
+//    dd(request()->ip());
+//    dd($_SERVER);
+//    dd($reader->country('85.238.106.27'));
+//    dd(request()->ip() !== '127.0.0.1' ?: request()->server->get('SERVER_ADDR')); /*нет HTTP_X_FORWARDED_FOR в массиве $_SERVER*/
+    $ip = '142.44.210.192';
+    $geoService->parse($ip);
+
+
+    \App\Models\Visit::create([
+        'ip' => $ip,
+        'continent_code' => $geoService->continentCode(),
+        'country_code' =>  $geoService->countryCode(),
+
+    ]);
+//    dd($reader->country('212.224.118.172')->country->isoCode);
+});
 Route::get('/github/callback',\App\Http\Controllers\Oauth\GitHubController::class);
 Route::get('/insta/callback',\App\Http\Controllers\Oauth\InstagramController::class);
 Route::middleware('guest')->group(function (){

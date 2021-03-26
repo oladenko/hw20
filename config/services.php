@@ -29,5 +29,15 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+    'github' => [
+        'client_id'     => env('OAUTH_GITHUB_CLIENT_ID'),
+        'client_secret' => env('OAUTH_GITHUB_CLIENT_SECRET'),
+        'redirect_uri'  => env('OAUTH_GITHUB_REDIRECT_URI'),
+    ],
+    'instagram' => [
+        'client_id' => env('OAUTH_INSTA_CLIENT_ID'),
+        'redirect_uri'  => env('OAUTH_INSTA_REDIRECT_URI'),
+        'client_secret' => env('OAUTH_INSTA_CLIENT_SECRET')
+    ]
 
 ];
