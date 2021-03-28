@@ -26,4 +26,9 @@ class IpApiGeoService implements GeoService
  $response = Http::get('http://ip-api.com/json/'. $ip . '?fields=continentCode,countryCode');
  $this->data = $response->json();
     }
+
+    public function userAgent()
+    {
+        return  request()->server->get('HTTP_USER_AGENT');
+    }
 }

@@ -17,6 +17,7 @@ class CreateVisitsTable extends Migration
             $table->id();
             $table->string('ip');
             $table->string('continent_code');
+            $table->string('user_agent')->nullable();
             $table->string('country_code');
             $table->timestamps();
         });

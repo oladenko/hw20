@@ -31,4 +31,9 @@ public function __construct()
     {
       return $this->data =  $this->reader->country($ip);
     }
+
+    public function userAgent()
+    {
+        return  $this->data->request()->server->get('HTTP_USER_AGENT');
+    }
 }
