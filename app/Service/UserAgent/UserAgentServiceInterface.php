@@ -8,6 +8,6 @@ interface UserAgentServiceInterface
 {
 
 public function userAgentBrowser();
-public function userAgentOs();
+public function userAgent();
 
 }

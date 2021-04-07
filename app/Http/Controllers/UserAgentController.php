@@ -15,7 +15,7 @@ class UserAgentController
         \App\Models\UserAgent::create([
 
             'browser' => $geoService->userAgentBrowser(),
-            'os' => $geoService->userAgentOs(),
+            'os' => $geoService->userAgent(),
 
         ]);
 

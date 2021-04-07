@@ -17,7 +17,7 @@ class UserAgentService implements UserAgentServiceInterface
 
     }
 
-    public function userAgentOs()
+    public function userAgent()
     {
         $userAgent = request()->server->get('HTTP_USER_AGENT');
         $parser = Parser::create();
