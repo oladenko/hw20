@@ -49,6 +49,7 @@ Route::get('/',\App\Http\Controllers\HomeController::class)->name('home');
 Route::get('/posts', [\App\Http\Controllers\PostController::class, 'index']);
 //Route::get('/user/agent', [\App\Http\Controllers\UserAgentController::class, 'create']);
 Route::get('/geo', [\App\Http\Controllers\VisitController::class, 'create']);
+Route::get('/user/agent', [\App\Http\Controllers\UserAgentController::class, 'create']);
 
 //Route::get('/geo', function (\App\Service\Geo\UserAgentService $geoService){
 //    dd(request()->ip());

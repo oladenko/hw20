@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateVisitsTable extends Migration
+class CreateUserAgentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,10 @@ class CreateVisitsTable extends Migration
      */
     public function up()
     {
-        Schema::create('visits', function (Blueprint $table) {
+        Schema::create('user_agents', function (Blueprint $table) {
             $table->id();
-            $table->string('ip');
-//            $table->string('browser');
-//            $table->string('os');
-            $table->string('continent_code');
-            $table->string('user_agent')->nullable();
-            $table->string('country_code');
+            $table->string('browser');
+            $table->string('os');
             $table->timestamps();
         });
     }
@@ -32,6 +28,6 @@ class CreateVisitsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('visits');
+        Schema::dropIfExists('user_agents');
     }
 }
