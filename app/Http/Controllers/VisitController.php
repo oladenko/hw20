@@ -19,8 +19,7 @@ class VisitController
             'ip' => $ip,
             'continent_code' => $geoService->continentCode(),
             'country_code' => $geoService->countryCode(),
-            'browser' => $geoService->userAgentBrowser(),
-            'os' => $geoService->userAgentOs(),
+
 
         ]);
 

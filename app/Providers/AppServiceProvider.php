@@ -5,6 +5,8 @@ namespace App\Providers;
 use App\Service\Geo\GeoService;
 use App\Service\Geo\IpApiGeoService;
 use App\Service\Geo\MaxmindGeoService;
+use App\Service\UserAgent\UserAgentService;
+use App\Service\UserAgent\UserAgentServiceInterface;
 use Illuminate\Support\ServiceProvider;
 use MaxMind\Db\Reader;
 
@@ -20,6 +22,10 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton(GeoService::class, function (){
 //            return new MaxmindUserAgentService();
             return new IpApiGeoService();
+        });
+        $this->app->singleton(UserAgentServiceInterface::class, function (){
+//            return new MaxmindUserAgentService();
+            return new UserAgentService();
         });
 //        $this->app->singleton(\GeoIp2\Database\Reader::class, function (){
 //            return new \GeoIp2\Database\Reader(base_path() . DIRECTORY_SEPARATOR .
