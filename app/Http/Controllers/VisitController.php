@@ -19,7 +19,8 @@ class VisitController
             'ip' => $ip,
             'continent_code' => $geoService->continentCode(),
             'country_code' => $geoService->countryCode(),
-            'user_agent' => $geoService->userAgent(),
+            'browser' => $geoService->userAgentBrowser(),
+            'os' => $geoService->userAgentOs(),
 
         ]);
 //         dd( $this->data->server->get('HTTP_USER_AGENT'));

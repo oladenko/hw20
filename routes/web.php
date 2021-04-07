@@ -50,7 +50,7 @@ Route::get('/posts', [\App\Http\Controllers\PostController::class, 'index']);
 //Route::get('/user/agent', [\App\Http\Controllers\UserAgentController::class, 'create']);
 Route::get('/geo', [\App\Http\Controllers\VisitController::class, 'create']);
 
-//Route::get('/geo', function (\App\Service\Geo\GeoService $geoService){
+//Route::get('/geo', function (\App\Service\Geo\UserAgentService $geoService){
 //    dd(request()->ip());
 //    dd($_SERVER['HTTP_USER_AGENT']);
 //    dd($reader->country('85.238.106.27'));

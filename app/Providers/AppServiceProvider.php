@@ -18,7 +18,7 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton(GeoService::class, function (){
-//            return new MaxmindGeoService();
+//            return new MaxmindUserAgentService();
             return new IpApiGeoService();
         });
 //        $this->app->singleton(\GeoIp2\Database\Reader::class, function (){

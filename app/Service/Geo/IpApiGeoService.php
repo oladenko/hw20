@@ -5,6 +5,7 @@ namespace App\Service\Geo;
 
 
 use Illuminate\Support\Facades\Http;
+use UAParser\Parser;
 
 class IpApiGeoService implements GeoService
 {
@@ -27,8 +28,20 @@ class IpApiGeoService implements GeoService
  $this->data = $response->json();
     }
 
-    public function userAgent()
+    public function userAgentBrowser()
     {
-        return  request()->server->get('HTTP_USER_AGENT');
+      $userAgent = request()->server->get('HTTP_USER_AGENT');
+        $parser = Parser::create();
+        $result = $parser->parse($userAgent);
+        return $result->ua->family;
+
+    }
+
+    public function userAgentOs()
+    {
+        $userAgent = request()->server->get('HTTP_USER_AGENT');
+        $parser = Parser::create();
+        $result = $parser->parse($userAgent);
+        return $result->os->family;
     }
 }
