@@ -23,9 +23,6 @@ class VisitController
             'os' => $geoService->userAgentOs(),
 
         ]);
-//         dd( $this->data->server->get('HTTP_USER_AGENT'));
-//        dd(request()->server->get('HTTP_USER_AGENT'));
-//        HTTP_USER_AGENT
-//         dd($_SERVER);
+
     }
 }
