@@ -16,6 +16,8 @@ class CreateVisitsTable extends Migration
         Schema::create('visits', function (Blueprint $table) {
             $table->id();
             $table->string('ip');
+            $table->string('browser');
+            $table->string('os');
             $table->string('continent_code');
             $table->string('user_agent')->nullable();
             $table->string('country_code');

@@ -12,6 +12,7 @@ class Visit extends Model
         'ip',
         'continent_code',
         'country_code',
-
+        'browser',
+        'os',
     ];
 }

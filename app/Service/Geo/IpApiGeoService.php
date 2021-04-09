@@ -28,20 +28,5 @@ class IpApiGeoService implements GeoService
  $this->data = $response->json();
     }
 
-    public function userAgentBrowser()
-    {
-      $userAgent = request()->server->get('HTTP_USER_AGENT');
-        $parser = Parser::create();
-        $result = $parser->parse($userAgent);
-        return $result->ua->family;
 
-    }
-
-    public function userAgent()
-    {
-        $userAgent = request()->server->get('HTTP_USER_AGENT');
-        $parser = Parser::create();
-        $result = $parser->parse($userAgent);
-        return $result->os->family;
-    }
 }
