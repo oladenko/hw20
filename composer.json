@@ -17,8 +17,8 @@
         "laravel/tinker": "^2.5",
         "ua-parser/uap-php": "^v3.9.14",
         "whichbrowser/parser": "^2.1",
-        "hillelod/geo": "^1.0.0",
-        "hillelod/useragent": "^1.0.0"
+        "hillelod/geo": "^1.0",
+        "hillelod/useragent": "^1.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
