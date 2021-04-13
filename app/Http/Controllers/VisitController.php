@@ -4,8 +4,8 @@
 namespace App\Http\Controllers;
 
 
-use App\Service\Geo\GeoService;
-use App\Service\UserAgent\UserAgentService;
+use Hillel\Geo\GeoService;
+use Hillel\UsAg\UserAgentService;
 
 class VisitController
 {

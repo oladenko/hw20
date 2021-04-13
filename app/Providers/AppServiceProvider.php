@@ -2,11 +2,11 @@
 
 namespace App\Providers;
 
-use App\Service\Geo\GeoService;
-use App\Service\Geo\IpApiGeoService;
-use App\Service\Geo\MaxmindGeoService;
-use App\Service\UserAgent\UserAgentService;
-use App\Service\UserAgent\UserAgentServiceInterface;
+use Hillel\Geo\GeoService;
+use Hillel\Geo\IpApiGeoService;
+use Hillel\Geo\MaxmindGeoService;
+use Hillel\UsAg\UserAgentService;
+use Hillel\UsAg\UserAgentServiceInterface;
 use Illuminate\Support\ServiceProvider;
 use MaxMind\Db\Reader;
 

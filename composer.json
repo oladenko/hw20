@@ -16,7 +16,9 @@
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
         "ua-parser/uap-php": "^v3.9.14",
-        "whichbrowser/parser": "^2.1"
+        "whichbrowser/parser": "^2.1",
+        "hillelod/geo": "^1.0.0",
+        "hillelod/useragent": "^1.0.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -61,5 +63,11 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/oladenko/hillel-geo"
+        }
+    ]
 }
