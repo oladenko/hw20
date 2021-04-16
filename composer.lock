@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dc2ee4097247e5135aa7016e434c0d83",
+    "content-hash": "6ac740b477f003706554b95da34f0138",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -990,47 +990,17 @@
             "time": "2021-03-21T16:25:00+00:00"
         },
         {
-            "name": "hillelod/geo",
+            "name": "hillelod/agentint",
             "version": "v1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/oladenko/hillel-geo.git",
-                "reference": "f246dbf33b65360b1f0ff2cbcedb324af16dec4b"
+                "url": "https://github.com/oladenko/userinterface.git",
+                "reference": "ca15b3af25e90df278e16a753448329f27b96464"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oladenko/hillel-geo/zipball/f246dbf33b65360b1f0ff2cbcedb324af16dec4b",
-                "reference": "f246dbf33b65360b1f0ff2cbcedb324af16dec4b",
-                "shasum": ""
-            },
-            "require": {
-                "geoip2/geoip2": "^v2.11.0",
-                "illuminate/support": "^v8.33.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Hillel\\Geo\\": "./src"
-                }
-            },
-            "support": {
-                "source": "https://github.com/oladenko/hillel-geo/tree/v1.0.0",
-                "issues": "https://github.com/oladenko/hillel-geo/issues"
-            },
-            "time": "2021-04-13T19:01:44+00:00"
-        },
-        {
-            "name": "hillelod/useragent",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/oladenko/hillelod.git",
-                "reference": "249403578194a80016d37b329ab229f902b1c659"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/oladenko/hillelod/zipball/249403578194a80016d37b329ab229f902b1c659",
-                "reference": "249403578194a80016d37b329ab229f902b1c659",
+                "url": "https://api.github.com/repos/oladenko/userinterface/zipball/ca15b3af25e90df278e16a753448329f27b96464",
+                "reference": "ca15b3af25e90df278e16a753448329f27b96464",
                 "shasum": ""
             },
             "require": {
@@ -1044,10 +1014,130 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "support": {
-                "issues": "https://github.com/oladenko/hillelod/issues",
-                "source": "https://github.com/oladenko/hillelod/tree/v1.0.0"
+                "issues": "https://github.com/oladenko/userinterface/issues",
+                "source": "https://github.com/oladenko/userinterface/tree/v1.0.0"
             },
-            "time": "2021-04-13T19:29:38+00:00"
+            "time": "2021-04-16T13:33:34+00:00"
+        },
+        {
+            "name": "hillelod/geo",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oladenko/geointerface.git",
+                "reference": "36308d18154fe57d0517332544879a6b1cf02289"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oladenko/geointerface/zipball/36308d18154fe57d0517332544879a6b1cf02289",
+                "reference": "36308d18154fe57d0517332544879a6b1cf02289",
+                "shasum": ""
+            },
+            "require": {
+                "geoip2/geoip2": "^v2.11.0",
+                "illuminate/support": "^v8.33.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Hillel\\Geo\\": "./src"
+                }
+            },
+            "support": {
+                "source": "https://github.com/oladenko/geointerface/tree/v1.0.0",
+                "issues": "https://github.com/oladenko/geointerface/issues"
+            },
+            "time": "2021-04-16T12:56:32+00:00"
+        },
+        {
+            "name": "hillelod/user",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oladenko/userservice.git",
+                "reference": "cc79d9cb7e6ad4f40459f2b879f88a07299cb31f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oladenko/userservice/zipball/cc79d9cb7e6ad4f40459f2b879f88a07299cb31f",
+                "reference": "cc79d9cb7e6ad4f40459f2b879f88a07299cb31f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^v8.33.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Hillel\\UsAg\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "support": {
+                "issues": "https://github.com/oladenko/userservice/issues",
+                "source": "https://github.com/oladenko/userservice/tree/v1.0.0"
+            },
+            "time": "2021-04-16T13:29:03+00:00"
+        },
+        {
+            "name": "hillelodd/geo",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oladenko/geoservice.git",
+                "reference": "25bd8417a764b55e0107a102484e67fec3c5f0ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oladenko/geoservice/zipball/25bd8417a764b55e0107a102484e67fec3c5f0ba",
+                "reference": "25bd8417a764b55e0107a102484e67fec3c5f0ba",
+                "shasum": ""
+            },
+            "require": {
+                "geoip2/geoip2": "^v2.11.0",
+                "illuminate/support": "^v8.33.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Hillel\\Geo\\": "./src"
+                }
+            },
+            "support": {
+                "source": "https://github.com/oladenko/geoservice/tree/v1.0.0",
+                "issues": "https://github.com/oladenko/geoservice/issues"
+            },
+            "time": "2021-04-16T12:59:17+00:00"
+        },
+        {
+            "name": "hilleloddd/geo",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oladenko/maxmindgeo.git",
+                "reference": "e02a04f2b0670a152407ab736e4807388fe7a7d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oladenko/maxmindgeo/zipball/e02a04f2b0670a152407ab736e4807388fe7a7d3",
+                "reference": "e02a04f2b0670a152407ab736e4807388fe7a7d3",
+                "shasum": ""
+            },
+            "require": {
+                "geoip2/geoip2": "^v2.11.0",
+                "illuminate/support": "^v8.33.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Hillel\\Geo\\": "./src"
+                }
+            },
+            "support": {
+                "source": "https://github.com/oladenko/maxmindgeo/tree/v1.0.0",
+                "issues": "https://github.com/oladenko/maxmindgeo/issues"
+            },
+            "time": "2021-04-16T13:10:18+00:00"
         },
         {
             "name": "laravel/framework",
@@ -1539,23 +1629,23 @@
         },
         {
             "name": "maxmind-db/reader",
-            "version": "v1.10.0",
+            "version": "v1.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmind/MaxMind-DB-Reader-php.git",
-                "reference": "07f84d969cfc527ce49388558a366ad376f1f35c"
+                "reference": "569bd44d97d30a4ec12c7793a33004a76d4caf18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maxmind/MaxMind-DB-Reader-php/zipball/07f84d969cfc527ce49388558a366ad376f1f35c",
-                "reference": "07f84d969cfc527ce49388558a366ad376f1f35c",
+                "url": "https://api.github.com/repos/maxmind/MaxMind-DB-Reader-php/zipball/569bd44d97d30a4ec12c7793a33004a76d4caf18",
+                "reference": "569bd44d97d30a4ec12c7793a33004a76d4caf18",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2"
             },
             "conflict": {
-                "ext-maxminddb": "<1.10.0,>=2.0.0"
+                "ext-maxminddb": "<1.10.1,>=2.0.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "*",
@@ -1598,9 +1688,9 @@
             ],
             "support": {
                 "issues": "https://github.com/maxmind/MaxMind-DB-Reader-php/issues",
-                "source": "https://github.com/maxmind/MaxMind-DB-Reader-php/tree/v1.10.0"
+                "source": "https://github.com/maxmind/MaxMind-DB-Reader-php/tree/v1.10.1"
             },
-            "time": "2021-02-09T17:52:47+00:00"
+            "time": "2021-04-14T17:49:35+00:00"
         },
         {
             "name": "maxmind/web-service-common",

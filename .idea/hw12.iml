@@ -119,7 +119,10 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/whichbrowser/parser" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/psr/cache" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/hillelod/geo" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/hillelod/useragent" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/hillelodd/geo" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/hilleloddd/geo" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/hillelod/agentint" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/hillelod/user" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
